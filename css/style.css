@@ -1,0 +1,250 @@
+body{
+    
+}
+header{
+    margin-top: 8px;
+}
+header nav{
+    
+    background-color: #ffffff;
+    color: #222222;
+    height: 100px;
+    border-radius: 2rem;
+    border: 3px solid  rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: -2.5px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menuNav{
+    
+    margin-top: 5px;
+    margin-left: 7px;
+    text-align: left;
+}
+
+header nav ul li{
+    box-shadow: black;
+    margin-top: 0.9%;
+    padding: 17px;
+    display: inline-block;
+    
+   
+}
+
+header ul li a{
+    font-size: 24px;
+    font-family: cursive;
+   text-decoration: none;
+   color: #222222;
+   border: 3px solid rgba(0, 0, 0, 0.3);
+   border-radius: 2rem;
+   padding: 15px;
+}
+
+.logo{
+    width: 60px;
+    height: 25px;
+}
+.back{
+    position: relative;
+     background-image:url("/images/family3.jpeg");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    border-radius: 1rem;
+   box-shadow: -2px 7px 15px rgba(0, 0, 0, 0.5);
+}
+.textOnImg{
+position: absolute;
+font-size: 3.5rem;
+font-family: cursive;
+top: 92px;
+left: 3.2rem;
+color: white;
+text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.7);
+
+
+
+
+}
+.liHead{
+    margin-left: 5%;
+}
+header a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+div h4{
+    text-align: center;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: cursive;
+    font-weight: 500;
+}
+.separateLine{
+    width: 70%;
+    height: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.7rem;
+    margin-bottom: 4rem;
+
+}
+.separateLine2{
+    width: 40%;
+    height: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+
+}
+.categuriesOfProduct{
+   
+    
+
+    
+}
+.categuriesOfProduct li{
+    display: inline-block;
+    margin: 30px;
+    font-size: 24px;
+    font-family: cursive;
+   text-decoration: wavy;
+   
+  
+  
+   
+   
+}
+.catigContainer{
+    text-align: center;
+    
+}
+.categuriesOfProduct li a{
+   padding: 15px;
+   color: rgba(0, 0, 0, 0.7);
+   border: 3px solid rgba(0, 0, 0, 0.2);
+   border-radius: 0.9rem;
+}
+.categuriesOfProduct li a:hover{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.85);
+    
+}
+.images{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.images img{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+   
+    border-radius: 1rem;
+   margin-bottom: 3px;
+    height: 375px;
+    width: 375px;
+}
+.images li{
+    display: inline-block;
+}
+.images div{
+    padding: 10px;
+    padding: 15px;
+    margin: 5px;
+}
+.images p{
+    
+    /* display: inline-block; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 0.5rem;
+    color: rgba(0, 0, 0, 0.8);
+    width: 365px;
+    font-family: cursive;
+    font-size: 17px;
+    padding: 15px;
+}
+div p{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: cursive;
+    font-weight: 500;
+}
+.separateLine3{
+    width: 10%;
+    height: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+.separateLine4{
+    width: 35%;
+    height: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+footer{
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 150px;
+}
+footer div{
+    font-size: 25px;
+    text-align: left;
+    font-family: cursive;
+}
+.mainUlFooter {
+    
+    display: inline-block;
+    margin-left: 150px;
+}
+.ulPadding{
+    padding: 15px;
+}
+footer div ul ul li{
+    font-size: 15px;
+}
+.contactUs img{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+.contactUs li{
+display: inline;
+}
+.contactUs{
+    text-align: center;
+}
+footer h6{
+    font-size: 17px;
+    margin: 1px;
+}
+.whySalamonUl{
+
+    
+}
+div .whySalamonUl p{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    padding: 15px;
+    margin: 4px;
+font-size: 25px;
+}
+.whySalamonUl li{
+    padding: 15px;
+    
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
