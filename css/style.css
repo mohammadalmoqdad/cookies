@@ -242,7 +242,7 @@ font-size: 25px;
 }
 .whySalamonUl li{
     padding: 15px;
-    
+    display: inline;
     margin: 0 auto;
     text-align: center;
     width: 40%;
