@@ -41,7 +41,6 @@ var container1 = document.getElementById("container");
 var tableE1 = document.createElement('table');
 container1.appendChild(tableE1);
 
-tableHead(); //first line in table
 
 Location.prototype.render = function () {
     var tr2 = document.createElement('tr');
@@ -50,30 +49,27 @@ Location.prototype.render = function () {
     tr2.appendChild(td1);
     td1.textContent = this.Lname;
     var totalDaily = 0;
+
     for (var i = 0; i < hours.length; i++) {
-
-
-
         var td2 = document.createElement('td');
         tr2.appendChild(td2);
         td2.textContent = this.cookiesPerHour[i];
 
         totalDaily += this.cookiesPerHour[i];
-        
+
     }
 
     var td3 = document.createElement('td');
     tr2.appendChild(td3);
     td3.textContent = totalDaily;
 
-    
+
 
 
 }
-for (var i = 0; i < locations1.length; i++) {
-    locations1[i].render();
-}
-total();
+
+
+
 
 
 
@@ -102,7 +98,7 @@ function total() {
     tr4.appendChild(td4);
     td4.textContent = "Totals"; //the cell of word'totals'
     var total = 0;
-    var total2=0; 
+    var total2 = 0;
     for (var i = 0; i < hours.length; i++) {
         var td5 = document.createElement('td');
         tr4.appendChild(td5);
@@ -110,18 +106,48 @@ function total() {
 
             total += locations1[j].cookiesPerHour[i];
             td5.textContent = total;
-            total2+=locations1[j].cookiesPerHour[i];
+            total2 += locations1[j].cookiesPerHour[i];
         }
         total = 0; //to avoid adding the value of totals of pevoius colomn
     }
     var td6 = document.createElement('td');
     tr4.appendChild(td6);
-    td6.textContent=total2;
+    td6.textContent = total2;
 
 }
 
 
 
+
+
+
+var locForm = document.getElementById('locationForm');
+locForm.addEventListener('submit', function (event) {
+    event.preventDefault(); //to avoid REUploading THe page which is the default
+
+
+
+    var locName = event.target.LName.value;
+    var maxCust =parseInt( event.target.maxCust.value);
+    var minCust = parseInt(event.target.minCust.value);
+    var avgCookiesPerCust = parseInt(event.target.avgCookiesPerCust.value);
+    
+
+   
+    tableHead(); //first line in table
+for (var i = 0; i < locations1.length; i++) {
+    
+    locations1[i].render();
+    
+}
+
+var newLocat=new Location(locName,maxCust,minCust,3.7);
+console.log(locations1)
+newLocat.getCustomerPerHour(maxCust,minCust);
+newLocat.getcookiesPerHour();
+newLocat.render();
+total();
+})
 
 
 
