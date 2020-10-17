@@ -132,27 +132,26 @@ locForm.addEventListener('submit', function (event) {
     var minCust = parseInt(event.target.minCust.value);
     var avgCookiesPerCust = parseInt(event.target.avgCookiesPerCust.value);
     
+var newLocat=new Location(locName,maxCust,minCust,3.7);
+console.log(locations1)
+newLocat.getCustomerPerHour(maxCust,minCust);
+newLocat.getcookiesPerHour();
+var rowTable=tableE1.rows.length;
+tableE1.deleteRow(rowTable-1);
+newLocat.render();
+total();
 
-   
-    tableHead(); //first line in table
+})
+
+
+tableHead(); //first line in table
 for (var i = 0; i < locations1.length; i++) {
     
     locations1[i].render();
     
 }
 
-var newLocat=new Location(locName,maxCust,minCust,3.7);
-console.log(locations1)
-newLocat.getCustomerPerHour(maxCust,minCust);
-newLocat.getcookiesPerHour();
-newLocat.render();
 total();
-})
-
-
-
-
-
 
 
 
